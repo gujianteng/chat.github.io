@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>chat</title>
+    <link rel="stylesheet" href="https://cdn.bootcss.com/twitter-bootstrap/4.4.1/css/bootstrap.min.css" />
+
+</head>
+
+<body>
+
+
+    <%- include('./commons/navbar') %>
+
+    <div class="container my-5">
+        <h1>聊天室</h1>
+
+        <div class="row">
+          <div class="col-md-6 mx-auto">
+            <div id="messages" class="mb-4"
+              style="height: 300px; overflow-y: auto; border: 1px solid #000;border-radius: 5px; padding: 10px;">
+    
+              <div class="my-4 d-flex">
+                <div class="mr-2">
+                  <small class="text-black-50">张三：</small>
+                </div>
+                <div>
+                  hello
+                </div>
+              </div>
+    
+              <div class="my-4 d-flex justify-content-end">
+                <div class="mr-2">
+                  <small class="text-black-50">我：</small>
+                </div>
+                <div>
+                  hello
+                </div>
+              </div>
+    
+            </div>
+          </div>
+        </div>
+    
+        <div class="row">
+          <div class="col-md-6 mx-auto d-flex">
+            <input id="value" type="text" class="form-control mr-2">
+            <button id="btn" class="btn btn-primary">Send</button>
+          </div>
+        </div>
+    </div>
+
+
+    <script src="https://cdn.bootcss.com/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdn.bootcss.com/twitter-bootstrap/4.4.1/js/bootstrap.min.js"></script>
+</body>
+
+</html>
