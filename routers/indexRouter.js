@@ -1,18 +1,15 @@
 var express= require('express')
+var auth=require("../middlewares/auth")
 var router = express.Router()
 
 
 // GET / 欢迎页面
-router.get("/",(req,res)=>{
-    res.render("welcome")
-})
+router.get("/",auth,(req,res)=>{res.render("welcome")})
 
 // GET /chatroom 聊天室页面
-router.get("/chatroom",(req,res)=>{
-    res.render("chatroom")
-})
+router.get("/chatroom",auth,(req,res)=>{res.render("chatroom")})
 
-// GET /login 聊天室页面
+// GET /login 登入页面
 router.get("/login",(req,res)=>{
     res.render("login")
 })
