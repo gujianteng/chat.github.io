@@ -24,7 +24,8 @@ router.post('/login', async (req, res) => {
             username:user.username
         }
         // 通过，可以登入
-        res.send("登入成功") 
+        var redirect=req.session.redirect||'/'
+        res.redirect(redirect) 
     } else {
         //不通过，用户名或密码不正确,把错误信息暴露出去，server.js统一处理了错误信息
         throw new Error("用户名或密码不正确")
