@@ -62,7 +62,7 @@
       $(function () {
         //建立socket连接
 
-        var socket = io("http://localhost:3000")
+        var socket = io()
 
         // 把名字传递给服务器
         socket.emit('setName', '<%= username %>')

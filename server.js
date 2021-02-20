@@ -1,4 +1,8 @@
 var express = require('express')
+// 引入 dotenv 这个项目环境变量
+var dotenv = require('dotenv')  
+// 配置 dotenv
+dotenv.config()
 //引入 socket.io
 var socketIo = require("socket.io")
 //引入 express-session中间件模块
