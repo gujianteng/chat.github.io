@@ -9,7 +9,7 @@ var userSchema = new mongoose.Schema({
 
     avatar: {
         type: String,
-        default: `http://${process.env.BASEURL}/assets/images/avatar.png`
+        default: `${process.env.BASEURL}/assets/images/avatar.png`
     }
 })
 
